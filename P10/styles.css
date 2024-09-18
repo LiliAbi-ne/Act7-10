@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #ff69b4;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #007bff;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+/* Estilos para la matriz */
+.matriz-container, .resultado-container {
+    display: grid;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.matriz-container input, .resultado-container input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e6f7ff;
+    color: #007bff;
+}
+
+.matriz-container input[readonly], .resultado-container input[readonly] {
+    background-color: #ffebf7;
+}
